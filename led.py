@@ -8,8 +8,8 @@ GPIO.setwarnings(False)
 
 #initialisation de la broche en mode "sortie"
 #⚠️ Le nombre passé en paramètre correspond au numéro de GPIO et non au numéro de la broche.
-GPIO.setup(12, GPIO.OUT)
-GPIO.setup(16, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(24, GPIO.OUT)
 
 #On dit à la pin GPIO 14 d'arrêter d'envoyer du courant.
 lever = 100
@@ -18,13 +18,13 @@ lever = 100
 #GPIO.output(16, GPIO.HIGH)
 
 while (lever != 0):
-    GPIO.output(12, GPIO.HIGH)
-    GPIO.output(16, GPIO.LOW)
+    GPIO.output(18, GPIO.HIGH)
+    GPIO.output(24, GPIO.LOW)
     
     time.sleep(0.05)
     
-    GPIO.output(12, GPIO.LOW)
-    GPIO.output(16, GPIO.HIGH)
+    GPIO.output(18, GPIO.LOW)
+    GPIO.output(24, GPIO.HIGH)
   
     time.sleep(0.05)
     
