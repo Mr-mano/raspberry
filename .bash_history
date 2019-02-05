@@ -28,3 +28,6 @@ git remote add origin https://github.com/Mr-mano/raspberry.git
 git remote add origin git@github.com:Mr-mano/raspberry.git
 git pull
 exit
+ls
+nano mouvement.py 
+clear

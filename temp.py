@@ -40,4 +40,4 @@ def read_temp():
 @app.route("/")
 def index():
     temp = read_temp()
-    return render_template('temp.html', temp=temp)
+    return render_template('temp.html', temp=temp) 
